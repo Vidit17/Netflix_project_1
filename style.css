@@ -1,0 +1,511 @@
+* {
+    font-family: sans-serif;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+}
+
+main {
+    background-image: url("Assetes/Images/bg_image1.jpg");
+    height: 90vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+
+}
+
+main .box {
+    height: 90vh;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+    top: 0px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 80vw;
+    height: 80px;
+    margin: auto;
+}
+
+.logo img {
+    width: 9.25rem;
+    height: 40px;
+    position: relative;
+    z-index: 10;
+
+}
+
+
+/* bakchodi */
+
+.buttons {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+select {
+    position: relative;
+    z-index: 20;
+    background-color: #080808a2;
+    color: white;
+    padding: 7px 22px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+select option{
+    color: black;
+    
+
+}
+
+.sign-button {
+    background-color: rgba(238, 0, 0, 0.937);
+    padding: 7px 13px;
+    position: relative;
+    z-index: 10;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 550;
+}
+
+.content {
+    height: calc(100% - 80px);
+    /* it takes hieght from its parent because of % it takes 100% hieght from its parent which is 90vh */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    color: white;
+    position: relative;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+
+
+.input {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input input {
+    background-color: rgba(23, 23, 23, 0.7);
+    height: 44px;
+    /* width: 300px; */
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    padding: 7px 101px 8px 14px;
+    font-size: 17px;
+
+}
+
+
+
+.input input:focus {
+    outline: 2px solid white;
+}
+
+.input a {
+    text-decoration: none;
+}
+
+.input a button {
+    font-size: 25px;
+    font-weight: 600;
+    background-color: rgb(229, 9, 20);
+    color: white;
+    height: 60px;
+    padding: 15px 30px;
+    cursor: pointer;
+    border: none;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    column-gap: 7px;
+}
+
+.btn:hover {
+    background-color: rgb(193, 17, 25);
+}
+
+a button span {
+    /* baad m style karenge is icon */
+
+}
+
+
+
+.separation {
+    height: 6px;
+    background-color: rgba(128, 128, 128, 0.671);
+}
+
+.section-one {
+    height: 60vh;
+    max-width: 80vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* section-1 */
+.content-1 {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.content-1> :nth-child(1) {
+    font-size: 42px;
+    /* font-weight: bolder; */
+    font-weight: 900;
+}
+
+.content-1> :nth-child(2),
+:nth-child(3) {
+    font-size: 16px;
+
+}
+
+.images {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+
+    /* position: relative; */
+}
+
+.images img {
+    width: 27vw;
+
+    /* position of image */
+    grid-row: 1/2;
+    grid-column: 1/2;
+    position: relative;
+
+}
+
+.images video {
+    width: 20vw;
+    /* position of video */
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+
+.content-2 :nth-child(2) {
+    font-size: 42px;
+    font-weight: 900;
+}
+
+.content-2 :nth-child(4) {
+    font-size: 16px;
+
+}
+
+.section-third-video video {
+    width: 23.5vw;
+}
+
+/* Frequently asked questions */
+
+.faq-s {
+    margin-top: 20px;
+    color: white;
+    height: 80vh;
+}
+
+.faq-s h3 {
+
+    text-align: center;
+    font-size: 48px;
+
+}
+
+.faq-s .faq-questions {
+    height: 70px;
+    max-width: 77vw;
+    margin: auto;
+    background-color: #2d2d2d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 20px;
+    margin-top: 8px;
+    font-size: 24px;
+    box-sizing: border-box;
+}
+
+.faq-s .faq-questions:hover {
+    background-color: rgb(65 65 65);
+    /* transition: all 1s ease-out; */
+}
+
+footer {
+
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    max-width: 77vw;
+    margin: auto;
+    height: 60vh;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+footer .tele span,
+a {
+
+    color: #ffffffb3;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+footer .tags {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 15px;
+}
+
+footer .tags a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffffb3;
+}
+
+.footer-button {
+    margin-top: 60px;
+}
+
+footer .trademark {
+    margin-top: 20px;
+    color: #ffffffb3;
+    font-size: 14px;
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+/* responsiveness */
+@media screen and (max-width:960px) {
+
+    .content {
+        margin-top: 0px;
+    }
+
+    .input input {
+        height: 22px;
+        font-size: 8px;
+        padding: 3px 50px 4px 7px;
+    }
+
+    .input a button {
+        font-size: 12px;
+        font-weight: 200;
+        height: 30px;
+        padding: 7px 17px;
+    }
+
+    .section-one {
+        height: 35vh;
+
+    }
+
+    .content-1> :first-child {
+        font-size: 21px;
+        font-weight: 900;
+    }
+
+    .content-1> :nth-child(2),
+    :nth-child(3) {
+        font-size: 8px;
+
+    }
+
+    .content-2> :nth-child(2) {
+        font-size: 21px;
+        font-weight: 900;
+    }
+
+    .content-2> :nth-child(4) {
+        font-size: 8px;
+
+    }
+
+    .input {
+        flex-direction: column;
+    }
+
+    main {
+        height: 60vh;
+    }
+
+    main .box {
+        height: 60vh;
+    }
+
+    .content> :nth-child(1) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .content> :nth-child(2) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .content> :nth-child(3) {
+        font-weight: 700;
+        font-size: 32px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .content> :nth-child(4) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .content> :nth-child(5) {
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 24px;
+        text-align: center;
+        padding: 0px 20px;
+    }
+
+    .logo img {
+        width: 4.25rem;
+        height: 20px;
+        position: relative;
+        z-index: 10;
+
+    }
+
+    /* Faqs */
+    .faq-s {
+        margin-top: 30px;
+        height: 45vh;
+    }
+
+    .faq-s h3 {
+        font-size: 23px;
+
+    }
+
+    .faq-s .faq-questions {
+        height: 35px;
+        font-size: 12px;
+    }
+
+    .faq-s .faq-questions span img {
+        height: 15px;
+
+    }
+
+    /* footer */
+    footer {
+        height: 40vh;
+    }
+
+    footer .tele span,
+    a {
+        font-size: 8px;
+        font-weight: 200;
+    }
+
+
+    footer .tags a {
+        font-size: 7px;
+        font-weight: 200;
+    }
+
+    footer .trademark {
+        font-size: 7px;
+        font-weight: 200;
+    }
+}
+
+@media screen and (min-width:960px) {
+
+
+    .content> :nth-child(1) {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .content> :nth-child(2) {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .content> :nth-child(3) {
+        font-weight: 600;
+        font-size: 40px;
+    }
+
+    .content> :nth-child(4) {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+
+    .content> :nth-child(5) {
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 50px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .content> :nth-child(1) {
+        font-weight: 900;
+        font-size: 56px;
+    }
+
+    .content> :nth-child(2) {
+        font-weight: 900;
+        font-size: 56px;
+    }
+
+    .content> :nth-child(3) {
+        font-weight: 900;
+        font-size: 56px;
+    }
+
+    .content> :nth-child(4) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .content> :nth-child(5) {
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 50px;
+    }
+}
